@@ -1153,6 +1153,8 @@ static const struct i2c_device_id bma280_id[] = {
 	{ }
 };
 
+MODULE_DEVICE_TABLE(i2c, bma280_id);
+
 static const struct dev_pm_ops bma280_pm_ops = {
 	.suspend = bma280_suspend,
 	.resume = bma280_resume
